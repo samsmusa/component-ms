@@ -52,6 +52,7 @@ export function DataTablePagination<TData>({
                     >
                         <span className="sr-only">Go to first page</span>
                         <ChevronsLeft/>
+                        
                     </Button>
                     <Button
                         variant="outline"
