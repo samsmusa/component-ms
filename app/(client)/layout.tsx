@@ -17,7 +17,7 @@ export default function RootLayout({
         <>
             <Navbar/>
             <Toaster/>
-            <div className="items-center justify-items-center min-h-screen font-[family-name:var(--font-geist-sans)]">
+            <div className="items-center justify-items-center min-h-screen">
                 {children}
             </div>
             <Footer/>

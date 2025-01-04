@@ -35,9 +35,9 @@ const DashboardTab = () => {
 
     return (
         <Tabs defaultValue={currentTab} value={currentTab} onValueChange={(tab) => handleTabChange(tab)} className="space-y-4">
-            <TabsList>
+            <TabsList className='gap-2'>
                 {tabConfig.map(({ key, label }) => (
-                    <TabsTrigger key={key} value={key}>
+                    <TabsTrigger className='bg-primary text-primary-foreground shadow hover:bg-primary/90' key={key} value={key}>
                         {label}
                     </TabsTrigger>
                 ))}

@@ -7,9 +7,9 @@ import {Input} from "@/components/ui/input";
 import {RadioGroup, RadioGroupItem} from "@/components/ui/radio-group";
 import {CreditCard, Landmark} from "lucide-react";
 import {DataTable} from "@/components/page/dashboard/tabs/components/data-table";
-import {deposits} from "@/components/page/dashboard/tabs/data/orders";
 import {depositColumns} from "@/components/page/dashboard/tabs/components/depositColumns";
-import {DataTableToolbar} from "@/components/page/dashboard/tabs/components/data-table-toolbar";
+import {DepositDataTableToolbar} from "@/components/page/dashboard/tabs/components/deposit-data-table-toolbar";
+import { deposits } from '@/components/page/dashboard/tabs/data/datas';
 
 const DepositTab = () => {
     return (
@@ -79,7 +79,7 @@ const DepositTab = () => {
                     </CardFooter>
                 </Card>
                 <div className="col-span-3">
-                    <DataTable Toolbar={DataTableToolbar} data={deposits} columns={depositColumns}/>
+                    <DataTable Toolbar={DepositDataTableToolbar} data={deposits} columns={depositColumns}/>
                 </div>
             </div>
         </TabsContent>

@@ -28,7 +28,7 @@ export const orderColumns: ColumnDef<Task>[] = [
 
             return (
                 <div className="flex space-x-2">
-                    {label && <Badge variant="outline">{label.label}</Badge>}
+                    {label && <Badge variant="outline" className="group-hover:bg-white group-hover:text-secondary-foreground">{label.label}</Badge>}
                     <span className="max-w-[500px] truncate font-medium">
             {row.getValue("title")}
           </span>
@@ -53,7 +53,7 @@ export const orderColumns: ColumnDef<Task>[] = [
             return (
                 <div className="flex w-[100px] items-center">
                     {status.icon && (
-                        <status.icon className="mr-2 h-4 w-4 text-muted-foreground"/>
+                        <status.icon className="mr-2 h-4 w-4 text-muted-foreground group-hover:text-white"/>
                     )}
                     <span>{status.label}</span>
                 </div>
